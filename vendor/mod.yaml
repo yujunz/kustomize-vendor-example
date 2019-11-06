@@ -1,0 +1,7 @@
+ apiVersion: someteam.example.com/v1
+ kind: GoGetter
+ metadata:
+   name: ambassador
+ url: https://getambassador.io/yaml/ambassador/ambassador-rbac.yaml
+ # subPath: base # (optional) relative path in the package
+ command: cat *.yaml # (optional) build command, default `kustomize build $subPath`
